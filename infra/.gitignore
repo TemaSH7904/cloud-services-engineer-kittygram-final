@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Переменные и секреты — не коммитим
+*.tfvars
+!*.tfvars.example
+authorized_key.json

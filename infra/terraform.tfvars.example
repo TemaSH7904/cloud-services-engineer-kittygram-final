@@ -1,0 +1,25 @@
+# Скопируйте в terraform.tfvars и заполните своими значениями.
+# terraform.tfvars НЕ коммитим (см. .gitignore).
+
+cloud_id  = "b1g..."          # yc config list -> cloud-id
+folder_id = "b1g..."          # yc config list -> folder-id
+
+# Static access key сервисного аккаунта (yc iam access-key create)
+access_key = "YCAJE..."
+secret_key = "YCN..."
+
+# Имя бакета приложения — уникальное и ОТЛИЧНОЕ от state-бакета
+bucket_name = "kittygram-app-ваш-логин"
+
+# Содержимое публичного ключа: cat ~/.ssh/id_ed25519.pub
+ssh_public_key = "ssh-ed25519 AAAA... you@host"
+
+# Необязательно (значения по умолчанию обычно подходят):
+# zone             = "ru-central1-a"
+# vm_user          = "ubuntu"
+# gateway_port     = 9000
+# vm_cores         = 2
+# vm_memory        = 2
+# vm_core_fraction = 20
+# vm_disk_size     = 15
+# vm_preemptible   = false
